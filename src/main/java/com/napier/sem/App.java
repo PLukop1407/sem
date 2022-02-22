@@ -8,7 +8,7 @@ import org.bson.Document;
 public class App {
     public static void main(String[] args) {
         //System.out.println("Boo yah!");
-        MongoClient mongoClient = new MongoClient("localhost", 27000);
+        MongoClient mongoClient = new MongoClient("mongo-dbserver");
 
         MongoDatabase database = mongoClient.getDatabase("mydb");
 
